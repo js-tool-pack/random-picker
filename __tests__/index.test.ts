@@ -352,18 +352,33 @@ describe('random-picker', function () {
 
     const take = picker.take(2);
     expect(picker.poolLen).toBe(1);
+    expect(picker.len).toBe(3);
 
     picker.remove(take[0] as number);
 
     expect(picker.poolLen).toBe(1);
+    expect(picker.len).toBe(2);
 
     picker.option(1);
     expect(picker.poolLen).toBe(2);
+    expect(picker.len).toBe(3);
 
     picker.options([5, 6, 7]);
     expect(picker.poolLen).toBe(5);
+    expect(picker.len).toBe(6);
 
     picker.reset();
     expect(picker.poolLen).toBe(6);
+    expect(picker.len).toBe(6);
+
+    picker.options([1, 1, 1, 1, 1]);
+    expect(picker.poolLen).toBe(11);
+    expect(picker.len).toBe(11);
+
+    // 移除所有的选项1
+    picker.remove(1);
+
+    expect(picker.poolLen).toBe(4);
+    expect(picker.len).toBe(4);
   });
 });
