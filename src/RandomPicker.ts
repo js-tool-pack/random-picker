@@ -142,19 +142,13 @@ export class RandomPicker<T> {
    */
   take<N extends number>(count: N): Tuple<T | null, N>;
   take(count = 1): null | T | (T | null)[] {
-    const next = () => {
-      const option = this.pool.randomOption;
-      if (option === null) return option;
-      this.pool.remove(option);
-      return option;
-    };
     if (count === 1) {
-      return next();
+      return this.pool.take();
     }
 
     return Array(Math.min(count, this.poolLen))
       .fill(null)
-      .map(() => next());
+      .map(() => this.pool.take());
   }
 
   /**

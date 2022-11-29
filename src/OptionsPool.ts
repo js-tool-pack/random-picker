@@ -65,21 +65,39 @@ export class OptionsPool<T> {
   }
 
   /**
-   * 从选项池中获取随机选项
-   * @protected
+   * 从选项池中获取随机选项下标
    */
-  get randomOption(): T | null {
-    if (!this.pool.length) return null;
+  private get randomOptionIndex(): number {
+    if (!this.pool.length) return -1;
     const range = Math.random() * 100;
-    return (this.pool.find((item) => item.range > range) as PoolItem<T>).option;
+    return this.pool.findIndex((item) => item.range > range);
   }
 
   /**
-   * 从选项池中移除一个选项，需要根据选项重新计算所有选项的选中几率
+   * 从选项池中获取随机选项
+   */
+  get randomOption(): T | null {
+    return this.pool[this.randomOptionIndex]?.option || null;
+  }
+
+  /**
+   * 从选项池中移除相同所有选项，需要根据选项重新计算所有选项的选中几率
    */
   remove(option: T): void {
     const list = this.pool.filter((it) => it.option !== option);
+    if (list.length === this.pool.length) return;
     this.generatePool(list);
+  }
+
+  /**
+   * 拿走某个选项，如果有相同的也只会拿走第一个
+   */
+  take(): T | null {
+    const index = this.randomOptionIndex;
+    if (index === -1) return null;
+    const option = this.pool.splice(index, 1)[0] as PoolItem<T>;
+    this.generatePool(this.pool);
+    return option.option;
   }
 
   /**
