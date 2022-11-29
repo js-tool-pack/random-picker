@@ -36,7 +36,7 @@ export class OptionsStore<T> {
    */
   remove(option: T): boolean {
     const filters = this.list.filter((it) => it.option !== option);
-    if (filters.length === -1) return false;
+    if (filters.length === this.list.length) return false;
     this.list = filters;
     return true;
   }
