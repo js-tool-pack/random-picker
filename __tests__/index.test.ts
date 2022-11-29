@@ -272,8 +272,8 @@ describe('random-picker', function () {
     picker.take(2); // 拿走两个
     expect([picker.len, picker.poolLen]).toEqual([3, 1]);
 
-    picker.remove(3); // 移除3
-    expect([picker.len, picker.poolLen]).toEqual([2, 2]);
+    picker.remove(picker.pick()!); // 移除剩下那个
+    expect([picker.len, picker.poolLen]).toEqual([2, 0]);
 
     picker.take(2); // 拿走两个
     expect([picker.len, picker.poolLen]).toEqual([2, 0]);
@@ -335,5 +335,25 @@ describe('random-picker', function () {
         [2, -10],
       ]);
     }).toThrowError('权重不能小于等于0，weights: 0');
+  });
+  it('remove/option/options后不应该刷新选项池', () => {
+    const picker = new RandomPicker([1, 2, 3]);
+    expect(picker.poolLen).toBe(3);
+
+    const take = picker.take(2);
+    expect(picker.poolLen).toBe(1);
+
+    picker.remove(take[0] as number);
+
+    expect(picker.poolLen).toBe(1);
+
+    picker.option(1);
+    expect(picker.poolLen).toBe(2);
+
+    picker.options([5, 6, 7]);
+    expect(picker.poolLen).toBe(5);
+
+    picker.reset();
+    expect(picker.poolLen).toBe(6);
   });
 });
