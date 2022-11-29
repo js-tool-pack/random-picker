@@ -224,7 +224,7 @@ async function setup() {
 
   // generate changelog
   step('\nGenerating changelog...');
-  actions.genChangeLog();
+  await actions.genChangeLog();
 
   // monorepo才需要重新install依赖
   if (isMonoRepo) {
