@@ -64,6 +64,8 @@ const v6 = picker.pick(); // 1 | 2
 const v7 = picker.take(); //
 ```
 
+`take` 如果有相同的也只会拿走第一个
+
 #### 两者区别
 
 |                                | `take` | `pick` |
