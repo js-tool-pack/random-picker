@@ -1,0 +1,424 @@
+<!DOCTYPE html><html class="default" lang="zh-CN"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>random-picker - v0.0.2</title><meta name="description" content="Documentation for random-picker - v0.0.2"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><style>.container {
+  padding: 0 2rem;
+}
+.tsd-page-toolbar {
+  border: 0;
+}
+.container-main {
+  padding: 2.5rem 0 0;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.menu-sticky-wrap {
+}
+.tsd-navigation.settings .tsd-accordion-details {
+  padding: 1rem;
+  background: var(--color-background-secondary);
+}
+.tsd-navigation.settings {
+  display: inline-block;
+  vertical-align: top;
+}
+.tsd-navigation.settings .tsd-index-accordion {
+  position: relative;
+}
+.tsd-navigation.settings .tsd-accordion-summary {
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
+  margin-left: 1rem;
+}
+.col-menu,
+.col-content {
+  position: static;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.col-menu {
+  flex: 0 0 20rem;
+  border-left: 0;
+  padding-left: 1rem;
+  padding-right: 0.1rem;
+}
+.col-content {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow-x: hidden;
+  flex: 1;
+}
+.menu-item-desc {
+  color: #5d5d5d;
+  font-size: 12px;
+  line-height: 1.26;
+  font-weight: normal;
+}
+
+:root[data-theme='dark'] .menu-item-desc {
+  color: #989898;
+}
+@media (prefers-color-scheme: dark) {
+  .menu-item-desc {
+    color: #989898;
+  }
+}
+
+a.tsd-index-link {
+  align-items: flex-start;
+}
+pre {
+  border: 0;
+}
+.tsd-signature {
+  background: var(--code-background);
+  border: 0;
+}
+code.tsd-tag {
+  border: 0;
+}
+
+#tsd-search.has-focus .tsd-navigation.settings {
+  visibility: hidden;
+}
+.tsd-navigation.primary ul li li a {
+  margin-left: 0.5rem;
+}
+</style><link rel="stylesheet" href="assets/custom.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>console.log(`Loaded ${location.href}`)</script><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"><a href="https://github.com/js-tool-pack/random-picker">GitHub</a></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">random-picker - v0.0.2</a>
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">Settings <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div></div>
+<div class="table-cell" id="tsd-widgets"><a href="src/template/toolbar#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-menu menu-sticky-wrap menu-highlight">
+<nav class="tsd-navigation primary">
+<details class="tsd-index-accordion" open><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg> Modules</h3></summary>
+<div class="tsd-accordion-details">
+<ul class="modules">
+<li class="current selected module">
+<ul></ul></li></ul></div></details></nav>
+<nav class="tsd-navigation secondary menu-sticky">
+<ul>
+<li class="tsd-kind-class"><a href="classes/OptionsStore.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg>
+<div>Options<wbr/>Store
+<div class="menu-item-desc">选项存储类</div></div></a></li>
+<li class="tsd-kind-class"><a href="classes/OptionsPool.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>
+<div>Options<wbr/>Pool
+<div class="menu-item-desc">维护一个选项池</div></div></a></li>
+<li class="tsd-kind-class"><a href="classes/RandomPicker.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg>
+<div>Random<wbr/>Picker
+<div class="menu-item-desc">工具类库：从选项池中随机挑选n个选项</div></div></a></li>
+<li class="tsd-kind-interface"><a href="interfaces/WeightsItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg>
+<div>Weights<wbr/>Item
+<div class="menu-item-desc">静态权重</div></div></a></li>
+<li class="tsd-kind-interface"><a href="interfaces/WeightsFnItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-256-path"></use><use href="#icon-256-text"></use></svg>
+<div>Weights<wbr/>Fn<wbr/>Item
+<div class="menu-item-desc">动态权重</div></div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/WeightFn.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4194304-path"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)" id="icon-4194304-text"></path></svg>
+<div>Weight<wbr/>Fn</div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/PoolItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>
+<div>Pool<wbr/>Item
+<div class="menu-item-desc">选项池数组item</div></div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/OptionListItem.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>
+<div>Option<wbr/>List<wbr/>Item
+<div class="menu-item-desc">选项列表item</div></div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/OptionList.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>
+<div>Option<wbr/>List
+<div class="menu-item-desc">选项列表</div></div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/OptionWeightsTuple.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>
+<div>Option<wbr/>Weights<wbr/>Tuple
+<div class="menu-item-desc">[option, weights] 元组</div></div></a></li>
+<li class="tsd-kind-type-alias"><a href="types/Seed.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-4194304-path"></use><use href="#icon-4194304-text"></use></svg>
+<div>Seed
+<div class="menu-item-desc">Seed 数组</div></div></a></li></ul></nav></div>
+<div class="col-content">
+<div class="tsd-page-title">
+<h2>random-picker - v0.0.2</h2></div>
+<div class="tsd-panel tsd-typography">
+<a href="#tool-packrandom-picker" id="tool-packrandom-picker" style="color: inherit; text-decoration: none;">
+  <h1>@tool-pack/random-picker</h1>
+</a>
+<blockquote>
+<p>🛠 随机挑选工具类</p>
+</blockquote>
+<p>该库从<a href="https://github.com/mengxinssfd/ts-utils/tree/981d9d/packages/random-picker">@mxssfd/ts-utils</a>迁移而来</p>
+<ul>
+<li><a href="https://js-tool-pack.github.io/random-picker/">Document</a></li>
+<li><a href="https://stackblitz.com/edit/react-ts-79qk3t?file=random-picker.tsx">Demo</a></li>
+</ul>
+
+<a href="#安装方法" id="安装方法" style="color: inherit; text-decoration: none;">
+  <h2>安装方法</h2>
+</a>
+<pre><code class="language-shell"><span class="hl-0">npm install @tool-pack/random-picker</span>
+</code></pre>
+
+<a href="#使用方法" id="使用方法" style="color: inherit; text-decoration: none;">
+  <h2>使用方法</h2>
+</a>
+
+<a href="#pick--take" id="pick--take" style="color: inherit; text-decoration: none;">
+  <h3><code>pick</code> / <code>take</code></h3>
+</a>
+<p>随机选取单个/多个选项</p>
+
+<a href="#pick" id="pick" style="color: inherit; text-decoration: none;">
+  <h4><code>pick</code></h4>
+</a>
+<p>从选项池中随机选中一个</p>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">]);</span><br/><br/><span class="hl-8">// pick 1个</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v1</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(); </span><span class="hl-8">// 随机从1，2中选中一个，每个选项选中的几率是50%</span><br/><br/><span class="hl-8">// pick多个</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v2</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">); </span><span class="hl-8">// 随机选中2个，可能会出现重复的</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v3</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(</span><span class="hl-7">10</span><span class="hl-0">); </span><span class="hl-8">// 随机选中10个，会一直在1，2之间选取</span>
+</code></pre>
+
+<a href="#take" id="take" style="color: inherit; text-decoration: none;">
+  <h4><code>take</code></h4>
+</a>
+<p>从选项池中随机拿走一个</p>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">]);</span><br/><br/><span class="hl-8">// take 1个</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v1</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// 随机从1，2中选中一个，每个选项选中的几率是50%</span><br/><br/><span class="hl-8">// take多个</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v2</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">); </span><span class="hl-8">// 随机选中2个，不会出现重复的</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v3</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">10</span><span class="hl-0">); </span><span class="hl-8">// 随机选中10个，但是最多只会返回两个，多了的会去掉</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v4</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// null。因为在上面已经取走了所有选项</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v5</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(); </span><span class="hl-8">// null。pick和take共享一个选项池，take拿走了以后，pick也会被影响。</span><br/><br/><span class="hl-8">// 如果需要再次pick或者take的话需要reset</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><br/><span class="hl-8">// 此时又可以pick/take了</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v6</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(); </span><span class="hl-8">// 1 | 2</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">v7</span><span class="hl-0"> = </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">//</span>
+</code></pre>
+
+<a href="#两者区别" id="两者区别" style="color: inherit; text-decoration: none;">
+  <h4>两者区别</h4>
+</a>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>take</code></th>
+<th><code>pick</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>可以选取一个</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>可以选取多个</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>选取多个时是否可能会重复选取</td>
+<td>否</td>
+<td>是</td>
+</tr>
+<tr>
+<td>选取多个时是否可以超出可选数量</td>
+<td>否</td>
+<td>是</td>
+</tr>
+<tr>
+<td>影响</td>
+<td><code>pick</code></td>
+<td>无</td>
+</tr>
+<tr>
+<td>是否会从选项池中移除</td>
+<td>是</td>
+<td>否</td>
+</tr>
+</tbody></table>
+
+<a href="#权重weights" id="权重weights" style="color: inherit; text-decoration: none;">
+  <h3>权重(<code>weights</code>)</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-8">// 默认权重为1</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">]);</span><br/><br/><span class="hl-8">// 约等于</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker2</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><br/><span class="hl-0">  [</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">1</span><span class="hl-0">], </span><span class="hl-8">// [选项, 权重]</span><br/><span class="hl-0">  [</span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-7">1</span><span class="hl-0">], </span><span class="hl-8">// [选项, 权重]</span><br/><span class="hl-0">]);</span>
+</code></pre>
+<p>选项有权重的概念</p>
+<p>注：权重(<code>weights</code>)不完全等于选中几率。</p>
+<p>规则：</p>
+<ul>
+<li>如果总共有 3 个选项，且权重都为 1 的选项，那么每个选中几率是 33%。</li>
+<li>如果总共只有 1 个选项，且唯一选项权重为 1，那么选中几率是 100%。</li>
+<li>如果总共有 2 个选项，第一个选项权重为 20，第二个权重为 80，那么选中几率依次为 20%、80%。</li>
+<li>添加权重为 0 或者为负数的选项会抛出异常</li>
+<li>如果有三个权重为 1 的选项，take 一个选项会刷新选项池，剩余两个的选中几率各为 50%，再次 take 一个，则唯一的一个选中几率是 100%</li>
+<li>每额外添加、删除、take 一个选项，选项池内选项的选中几率都会重新计算</li>
+</ul>
+
+<a href="#optionoptions-添加选项" id="optionoptions-添加选项" style="color: inherit; text-decoration: none;">
+  <h3><code>option</code>/<code>options</code> 添加选项</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">]);</span><br/><br/><span class="hl-8">// 添加单个选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">); </span><span class="hl-8">// 添加权重为1的选项3</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">4</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">); </span><span class="hl-8">// 添加选项3，并且设置权重为2</span><br/><span class="hl-8">// 添加动态权重的选项33，该权重回调函数会在计算所有静态权重后调用，此时如果只有一个动态权重的话约等于50%</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">33</span><span class="hl-0">, (</span><span class="hl-2">weights</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weights</span><span class="hl-0">);</span><br/><br/><span class="hl-8">// 添加多个选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">options</span><span class="hl-0">([</span><span class="hl-7">5</span><span class="hl-0">, </span><span class="hl-7">6</span><span class="hl-0">]); </span><span class="hl-8">// 添加权重为1的选项5和6</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">options</span><span class="hl-0">([</span><br/><span class="hl-0">  [</span><span class="hl-7">7</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">],</span><br/><span class="hl-0">  [</span><span class="hl-7">8</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">],</span><br/><span class="hl-0">]); </span><span class="hl-8">// 添加权重为2的选项7和8</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">options</span><span class="hl-0">([[</span><span class="hl-7">9</span><span class="hl-0">], [</span><span class="hl-7">10</span><span class="hl-0">, (</span><span class="hl-2">weights</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weight</span><span class="hl-0">]]); </span><span class="hl-8">// 添加权重为1的选项9和动态权限的选项10，此时的选项10和选项33选中几率为33.3333%，其他按权限计算各个选项选中几率</span>
+</code></pre>
+<p><del>注意：如果添加选项前有用过 <code>take</code> 的话，调用 <code>option/options</code> 会自动刷新选项池，已经 <code>take</code> 过的选项会重新进入选项池</del><strong>（v0.0.2 已弃用该特性，新特性为可随意添加删除）</strong></p>
+
+<a href="#rateof-获取选项的选中几率" id="rateof-获取选项的选中几率" style="color: inherit; text-decoration: none;">
+  <h3><code>rateOf</code> 获取选项的选中几率</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">]);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 100</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 50</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 50</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 25</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 25</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 50</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">4</span><span class="hl-0">, (</span><span class="hl-2">weightTotal</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weightTotal</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 12.5</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 12.5</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 25</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">4</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 50</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">5</span><span class="hl-0">, (</span><span class="hl-2">weightTotal</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weightTotal</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 8.3333</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 8.3333</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 16.6667</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">4</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 33.3333</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">5</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 33.3334</span><br/><br/><span class="hl-8">// 重复选项</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker2</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">1</span><span class="hl-0">]);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker2</span><span class="hl-0">.</span><span class="hl-6">rateOf</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">)); </span><span class="hl-8">// 选中几率 100</span>
+</code></pre>
+
+<a href="#remove-移除选项" id="remove-移除选项" style="color: inherit; text-decoration: none;">
+  <h3><code>remove</code> 移除选项</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-7">3</span><span class="hl-0">]);</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">); </span><span class="hl-8">// 此时会把选项1移除</span>
+</code></pre>
+<p>注意：如果移除的选项不存在于 <code>seed </code>或者未备份的话，将不能恢复</p>
+
+<a href="#resetresetwithseed-重置选项池" id="resetresetwithseed-重置选项池" style="color: inherit; text-decoration: none;">
+  <h3><code>reset</code>/<code>resetWithSeed</code> 重置选项池</h3>
+</a>
+
+<a href="#使用-reset重置选项池" id="使用-reset重置选项池" style="color: inherit; text-decoration: none;">
+  <h4>使用 <code>reset</code>重置选项池</h4>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">seed</span><span class="hl-0"> = [</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-7">3</span><span class="hl-0">];</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">);</span><br/><br/><span class="hl-8">// 当take 3次后，选项池就为空了，此时再take或pick都会返回null</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number,number]</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// invalid null</span><br/><br/><span class="hl-8">// 重置选项池</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// 1 | 2 | 3</span><br/><br/><span class="hl-8">// 注意：不会重置remove过的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">); </span><span class="hl-8">// 移除选项1</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number]</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  重置回去也是[number,number]</span><br/><br/><span class="hl-8">// option</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">5</span><span class="hl-0">);</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number,number]</span><br/><br/><span class="hl-8">// 使用reset可以重置option/options添加的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number,number]</span><br/><br/><span class="hl-8">//</span>
+</code></pre>
+
+<a href="#使用-resetwithseed重置选项池" id="使用-resetwithseed重置选项池" style="color: inherit; text-decoration: none;">
+  <h4>使用 <code>resetWithSeed</code>重置选项池</h4>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">seed</span><span class="hl-0"> = [</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-7">3</span><span class="hl-0">];</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">);</span><br/><br/><span class="hl-8">// 当take 3次后，选项池就为空了，此时再take或pick都会返回null</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number,number]</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// invalid null</span><br/><br/><span class="hl-8">// 重置选项池</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">resetWithSeed</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// 1 | 2 | 3</span><br/><br/><span class="hl-8">// 注意：会重置remove过的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">resetWithSeed</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">1</span><span class="hl-0">); </span><span class="hl-8">// 移除选项1</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number]</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">resetWithSeed</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [number,number,number]</span><br/><br/><span class="hl-8">// option</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">resetWithSeed</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">option</span><span class="hl-0">(</span><span class="hl-7">5</span><span class="hl-0">);</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [1 ｜ 2 ｜ 3 | 5, ...]</span><br/><br/><span class="hl-8">// 使用resetWithSeed会丢弃option/options添加的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">resetWithSeed</span><span class="hl-0">();</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">.</span><span class="hl-2">length</span><span class="hl-0">); </span><span class="hl-8">//  [1 ｜ 2 ｜ 3 , ...]</span>
+</code></pre>
+
+<a href="#两者区别-1" id="两者区别-1" style="color: inherit; text-decoration: none;">
+  <h4>两者区别</h4>
+</a>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>reset</code></th>
+<th><code>resetWithSeed</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>恢复被<code>take</code>的选项</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>重置<code>option</code>/<code>options</code>添加的选项</td>
+<td>是</td>
+<td>否，会丢弃选项</td>
+</tr>
+<tr>
+<td>恢复被<code>remove</code>的选项</td>
+<td>否</td>
+<td>如果是存在于<code>seed</code>的选项被 <code>remove</code>会被恢复</td>
+</tr>
+</tbody></table>
+
+<a href="#export--exportpool-导出选项" id="export--exportpool-导出选项" style="color: inherit; text-decoration: none;">
+  <h3><code>export</code> / <code>exportPool</code> 导出选项</h3>
+</a>
+
+<a href="#export导出所有选项" id="export导出所有选项" style="color: inherit; text-decoration: none;">
+  <h4><code>export</code>导出所有选项</h4>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0">, </span><span class="hl-2">Seed</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">seed</span><span class="hl-0">: </span><span class="hl-9">Seed</span><span class="hl-0">&lt;</span><span class="hl-9">number</span><span class="hl-0">&gt; = [</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, [</span><span class="hl-7">3</span><span class="hl-0">, (</span><span class="hl-2">weights</span><span class="hl-0">: </span><span class="hl-9">number</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weights</span><span class="hl-0">]];</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">);</span><br/><br/><span class="hl-8">// export 导出所有选项</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">export</span><span class="hl-0">()); </span><span class="hl-8">// [[1, 1], [2, 1], [3, (weights: number) =&gt; weights]]</span><br/><br/><span class="hl-8">// take过的的选项也会导出</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">export</span><span class="hl-0">()); </span><span class="hl-8">// [[1, 1], [2, 1], [3, (weights: number) =&gt; weights]]</span><br/><br/><span class="hl-8">// 不会导出remove过的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">export</span><span class="hl-0">()); </span><span class="hl-8">// [[1, 1], [2, 1]]</span>
+</code></pre>
+
+<a href="#export导出剩余选项" id="export导出剩余选项" style="color: inherit; text-decoration: none;">
+  <h4><code>export</code>导出剩余选项</h4>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0">, </span><span class="hl-2">Seed</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">seed</span><span class="hl-0">: </span><span class="hl-9">Seed</span><span class="hl-0">&lt;</span><span class="hl-9">number</span><span class="hl-0">&gt; = [</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, [</span><span class="hl-7">3</span><span class="hl-0">, (</span><span class="hl-2">weights</span><span class="hl-0">: </span><span class="hl-9">number</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> </span><span class="hl-2">weights</span><span class="hl-0">]];</span><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">(</span><span class="hl-2">seed</span><span class="hl-0">);</span><br/><br/><span class="hl-8">// exportPool 导出剩余选项</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">exportPool</span><span class="hl-0">()); </span><span class="hl-8">// [[1, 1], [2, 1], [3, (weights: number) =&gt; weights]]</span><br/><br/><span class="hl-8">// take过的选项不会导出</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">exportPool</span><span class="hl-0">()); </span><span class="hl-8">// []</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">reset</span><span class="hl-0">();</span><br/><span class="hl-8">// 不会导出remove过的选项</span><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">);</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">exportPool</span><span class="hl-0">()); </span><span class="hl-8">// [[1, 1], [2, 1]]</span>
+</code></pre>
+
+<a href="#两者区别-2" id="两者区别-2" style="color: inherit; text-decoration: none;">
+  <h4>两者区别</h4>
+</a>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>export</code>(导出未 <code>remove</code> 的所有选项)</th>
+<th><code>exportPool</code>(剩余可供选择的所有选项)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>能导出<code>take</code> 过的选项</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>能导出<code>remove</code> 过的选项</td>
+<td>是</td>
+<td>否</td>
+</tr>
+</tbody></table>
+
+<a href="#pooloptions-查看剩余选项" id="pooloptions-查看剩余选项" style="color: inherit; text-decoration: none;">
+  <h3><code>poolOptions</code> 查看剩余选项</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, [</span><span class="hl-7">3</span><span class="hl-0">, </span><span class="hl-7">98</span><span class="hl-0">]]);</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(); </span><span class="hl-8">// 3  98%几率会出现3</span><br/><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolOptions</span><span class="hl-0">); </span><span class="hl-8">// [1|2, 1|2]</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">();</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolOptions</span><span class="hl-0">); </span><span class="hl-8">// [1|2]</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">();</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolOptions</span><span class="hl-0">); </span><span class="hl-8">// []</span>
+</code></pre>
+
+<a href="#len--poollen-查看选项数量" id="len--poollen-查看选项数量" style="color: inherit; text-decoration: none;">
+  <h3><code>len</code> / <code>poolLen</code> 查看选项数量</h3>
+</a>
+<pre><code class="language-typescript"><span class="hl-1">import</span><span class="hl-0"> { </span><span class="hl-2">RandomPicker</span><span class="hl-0"> } </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&#39;@mxssfd/random-picker&#39;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">picker</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">([</span><span class="hl-7">1</span><span class="hl-0">, </span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-7">3</span><span class="hl-0">]);</span><br/><br/><span class="hl-8">// 初始都有3个</span><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">len</span><span class="hl-0">, </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolLen</span><span class="hl-0">); </span><span class="hl-8">// 3, 3</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">); </span><span class="hl-8">// 拿走两个</span><br/><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">len</span><span class="hl-0">, </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolLen</span><span class="hl-0">); </span><span class="hl-8">// 3, 1</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">remove</span><span class="hl-0">(</span><span class="hl-7">3</span><span class="hl-0">); </span><span class="hl-8">// 移除3</span><br/><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">len</span><span class="hl-0">, </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolLen</span><span class="hl-0">); </span><span class="hl-8">// 2, 2</span><br/><br/><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">); </span><span class="hl-8">// 拿走两个</span><br/><br/><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">len</span><span class="hl-0">, </span><span class="hl-2">picker</span><span class="hl-0">.</span><span class="hl-2">poolLen</span><span class="hl-0">); </span><span class="hl-8">// 2, 0</span>
+</code></pre>
+
+<a href="#添加命令行脚本工具" id="添加命令行脚本工具" style="color: inherit; text-decoration: none;">
+  <h2>添加命令行脚本工具</h2>
+</a>
+<p>如果你有选择困难症，那么全局安装此工具<code>npm</code>包可以帮助你选择，类似掷骰子</p>
+
+<a href="#添加命令行脚本步骤" id="添加命令行脚本步骤" style="color: inherit; text-decoration: none;">
+  <h3>添加命令行脚本步骤</h3>
+</a>
+
+<a href="#1在项目根目录下新建bin目录，然后在bin目录下新建indexjs文件" id="1在项目根目录下新建bin目录，然后在bin目录下新建indexjs文件" style="color: inherit; text-decoration: none;">
+  <h4>1.在项目根目录下新建<code>bin</code>目录，然后在<code>bin</code>目录下新建<code>index.js</code>文件</h4>
+</a>
+<p>index.js</p>
+<pre><code class="language-javascript"><span class="hl-8">#!/usr/bin/env node</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> { </span><span class="hl-5">RandomPicker</span><span class="hl-0"> } = </span><span class="hl-6">require</span><span class="hl-0">(</span><span class="hl-3">&#39;../dist/random-picker.cjs&#39;</span><span class="hl-0">);</span><br/><br/><span class="hl-8">/**</span><br/><span class="hl-8"> * </span><span class="hl-4">@returns</span><span class="hl-8"> </span><span class="hl-9">{</span><br/><span class="hl-9"> * {</span><br/><span class="hl-9"> * help?:boolean;h?:boolean;</span><br/><span class="hl-9"> * pick?:boolean|number;p?:boolean|number;</span><br/><span class="hl-9"> * take?:boolean|number;t?:boolean;</span><br/><span class="hl-9"> * options:(number | string| [string|number,number])[]</span><br/><span class="hl-9"> * }</span><br/><span class="hl-9"> * }</span><br/><span class="hl-8"> */</span><br/><span class="hl-4">function</span><span class="hl-0"> </span><span class="hl-6">getOptions</span><span class="hl-0">() {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">args</span><span class="hl-0"> = </span><span class="hl-2">process</span><span class="hl-0">.</span><span class="hl-2">argv</span><span class="hl-0">.</span><span class="hl-6">slice</span><span class="hl-0">(</span><span class="hl-7">2</span><span class="hl-0">);</span><br/><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">keyReg</span><span class="hl-0"> =</span><span class="hl-10"> /</span><span class="hl-11">^</span><span class="hl-10">-</span><span class="hl-12">+</span><span class="hl-10">/</span><span class="hl-0">;</span><br/><span class="hl-0">  </span><span class="hl-1">return</span><span class="hl-0"> </span><span class="hl-2">args</span><span class="hl-0">.</span><span class="hl-6">reduce</span><span class="hl-0">((</span><span class="hl-2">result</span><span class="hl-0">, </span><span class="hl-2">cur</span><span class="hl-0">, </span><span class="hl-2">index</span><span class="hl-0">) </span><span class="hl-4">=&gt;</span><span class="hl-0"> {</span><br/><span class="hl-0">    </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">next</span><span class="hl-0"> = </span><span class="hl-2">args</span><span class="hl-0">[</span><span class="hl-2">index</span><span class="hl-0"> + </span><span class="hl-7">1</span><span class="hl-0">];</span><br/><span class="hl-0">    </span><span class="hl-1">if</span><span class="hl-0"> (</span><span class="hl-2">keyReg</span><span class="hl-0">.</span><span class="hl-6">test</span><span class="hl-0">(</span><span class="hl-2">cur</span><span class="hl-0">)) {</span><br/><span class="hl-0">      </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">key</span><span class="hl-0"> = </span><span class="hl-2">cur</span><span class="hl-0">.</span><span class="hl-6">replace</span><span class="hl-0">(</span><span class="hl-2">keyReg</span><span class="hl-0">, </span><span class="hl-3">&#39;&#39;</span><span class="hl-0">);</span><br/><span class="hl-0">      </span><span class="hl-8">// --take 2 获取take后面的2</span><br/><span class="hl-0">      </span><span class="hl-2">result</span><span class="hl-0">[</span><span class="hl-2">key</span><span class="hl-0">] =</span><span class="hl-10"> /</span><span class="hl-11">^</span><span class="hl-10">\d</span><span class="hl-12">+</span><span class="hl-11">$</span><span class="hl-10">/</span><span class="hl-0">.</span><span class="hl-6">test</span><span class="hl-0">(</span><span class="hl-2">next</span><span class="hl-0">) ? </span><span class="hl-6">Number</span><span class="hl-0">(</span><span class="hl-2">next</span><span class="hl-0">) ?? </span><span class="hl-4">true</span><span class="hl-0"> : </span><span class="hl-4">true</span><span class="hl-0">;</span><br/><span class="hl-0">    } </span><span class="hl-1">else</span><span class="hl-0"> </span><span class="hl-1">if</span><span class="hl-0"> (</span><span class="hl-10">/</span><span class="hl-11">^</span><span class="hl-13">\[</span><span class="hl-10">.</span><span class="hl-12">+</span><span class="hl-10">]</span><span class="hl-11">$</span><span class="hl-10">/</span><span class="hl-0">.</span><span class="hl-6">test</span><span class="hl-0">(</span><span class="hl-2">cur</span><span class="hl-0">)) {</span><br/><span class="hl-0">      </span><span class="hl-8">// 随机选项</span><br/><span class="hl-0">      </span><span class="hl-1">try</span><span class="hl-0"> {</span><br/><span class="hl-0">        </span><span class="hl-2">result</span><span class="hl-0">.</span><span class="hl-2">options</span><span class="hl-0"> = </span><span class="hl-5">JSON</span><span class="hl-0">.</span><span class="hl-6">parse</span><span class="hl-0">(</span><span class="hl-2">cur</span><span class="hl-0">);</span><br/><span class="hl-0">      } </span><span class="hl-1">catch</span><span class="hl-0"> (</span><span class="hl-2">e</span><span class="hl-0">) {</span><br/><span class="hl-0">        </span><span class="hl-1">throw</span><span class="hl-0"> </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">TypeError</span><span class="hl-0">(</span><span class="hl-3">&#39;请检查选项数组是否符合JSON格式&#39;</span><span class="hl-0">);</span><br/><span class="hl-0">      }</span><br/><span class="hl-0">    }</span><br/><span class="hl-0">    </span><span class="hl-1">return</span><span class="hl-0"> </span><span class="hl-2">result</span><span class="hl-0">;</span><br/><span class="hl-0">  }, {});</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-4">function</span><span class="hl-0"> </span><span class="hl-6">showHelp</span><span class="hl-0">() {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">helpContent</span><span class="hl-0"> = </span><span class="hl-3">`</span><br/><span class="hl-3">--help/-h 帮助</span><br/><span class="hl-3">--take/-t 使用take获取随机选项  获取2个随机选项--take 2 &#39;[1,2]&#39;</span><br/><span class="hl-3">--pick/-p 使用pick获取随机选项 同take</span><br/><span class="hl-3">`</span><span class="hl-0">.</span><span class="hl-6">trim</span><span class="hl-0">();</span><br/><span class="hl-0">  </span><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">helpContent</span><span class="hl-0">);</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-8">/**</span><br/><span class="hl-8"> *</span><br/><span class="hl-8"> * </span><span class="hl-4">@param</span><span class="hl-8"> </span><span class="hl-9">{(string|number)[]}</span><span class="hl-8"> </span><span class="hl-2">options</span><br/><span class="hl-8"> * </span><span class="hl-4">@param</span><span class="hl-8"> </span><span class="hl-9">{boolean|number}</span><span class="hl-8"> </span><span class="hl-2">take</span><br/><span class="hl-8"> * </span><span class="hl-4">@param</span><span class="hl-8"> </span><span class="hl-9">{boolean|number}</span><span class="hl-8"> </span><span class="hl-2">pick</span><br/><span class="hl-8"> */</span><br/><span class="hl-4">function</span><span class="hl-0"> </span><span class="hl-6">runRP</span><span class="hl-0">(</span><span class="hl-2">options</span><span class="hl-0">, </span><span class="hl-2">take</span><span class="hl-0">, </span><span class="hl-2">pick</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">rm</span><span class="hl-0"> = </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">RandomPicker</span><span class="hl-0">(</span><span class="hl-2">options</span><span class="hl-0">);</span><br/><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">result</span><span class="hl-0"> = </span><span class="hl-2">take</span><br/><span class="hl-0">    ? </span><span class="hl-2">rm</span><span class="hl-0">.</span><span class="hl-6">take</span><span class="hl-0">(</span><span class="hl-4">typeof</span><span class="hl-0"> </span><span class="hl-2">take</span><span class="hl-0"> === </span><span class="hl-3">&#39;number&#39;</span><span class="hl-0"> ? </span><span class="hl-2">take</span><span class="hl-0"> : </span><span class="hl-7">1</span><span class="hl-0">)</span><br/><span class="hl-0">    : </span><span class="hl-2">rm</span><span class="hl-0">.</span><span class="hl-6">pick</span><span class="hl-0">(</span><span class="hl-4">typeof</span><span class="hl-0"> </span><span class="hl-2">pick</span><span class="hl-0"> === </span><span class="hl-3">&#39;number&#39;</span><span class="hl-0"> ? </span><span class="hl-2">pick</span><span class="hl-0"> : </span><span class="hl-7">1</span><span class="hl-0">);</span><br/><br/><span class="hl-0">  </span><span class="hl-2">console</span><span class="hl-0">.</span><span class="hl-6">log</span><span class="hl-0">(</span><span class="hl-2">result</span><span class="hl-0">);</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-4">function</span><span class="hl-0"> </span><span class="hl-6">setup</span><span class="hl-0">() {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">options</span><span class="hl-0"> = </span><span class="hl-6">getOptions</span><span class="hl-0">();</span><br/><br/><span class="hl-0">  </span><span class="hl-1">if</span><span class="hl-0"> (</span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">h</span><span class="hl-0"> || </span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">help</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-6">showHelp</span><span class="hl-0">();</span><br/><span class="hl-0">    </span><span class="hl-1">return</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><br/><span class="hl-0">  </span><span class="hl-1">if</span><span class="hl-0"> (!</span><span class="hl-2">Array</span><span class="hl-0">.</span><span class="hl-6">isArray</span><span class="hl-0">(</span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">options</span><span class="hl-0">)) {</span><br/><span class="hl-0">    </span><span class="hl-1">throw</span><span class="hl-0"> </span><span class="hl-4">new</span><span class="hl-0"> </span><span class="hl-6">Error</span><span class="hl-0">(</span><span class="hl-3">&#39;缺少选项&#39;</span><span class="hl-0">);</span><br/><span class="hl-0">  }</span><br/><br/><span class="hl-0">  </span><span class="hl-6">runRP</span><span class="hl-0">(</span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">options</span><span class="hl-0">, </span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">take</span><span class="hl-0"> ?? </span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">t</span><span class="hl-0">, </span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">pick</span><span class="hl-0"> ?? </span><span class="hl-2">options</span><span class="hl-0">.</span><span class="hl-2">p</span><span class="hl-0">);</span><br/><span class="hl-0">}</span><br/><span class="hl-6">setup</span><span class="hl-0">();</span>
+</code></pre>
+<p>需要注意的是文件头部的<code>#!/usr/bin/env node</code>不能缺少，否则命令行工具是运行不了的。</p>
+
+<a href="#2然后修改packagejson加上bin属性" id="2然后修改packagejson加上bin属性" style="color: inherit; text-decoration: none;">
+  <h4>2.然后修改<code>package.json</code>加上<code>bin</code>属性</h4>
+</a>
+<p>package.json</p>
+<pre><code class="language-diff"><span class="hl-7">+ &quot;bin&quot;: {</span><br/><span class="hl-7">+   &quot;random-picker&quot;: &quot;./bin/index.js&quot;</span><br/><span class="hl-7">+ },</span>
+</code></pre>
+
+<a href="#3调试" id="3调试" style="color: inherit; text-decoration: none;">
+  <h4>3.调试</h4>
+</a>
+<p>在控制台打开项目目录，然后输入命令<code>npm link</code>，这样<code>random-picker</code>包就相当于全局安装好了。</p>
+<p>比如说我明天不知道学习好还是躺平好，那么我就可以使用它来帮助我选择，命令行输入如下：</p>
+<p><code>random-picker &#39;[[&quot;睡觉&quot;, 99], &quot;学习&quot;]&#39;</code></p>
+<p>那么 99%的几率是睡觉 😂</p>
+
+<a href="#后记" id="后记" style="color: inherit; text-decoration: none;">
+  <h3>后记</h3>
+</a>
+<p>以上是实现步骤，你也可以直接安装<code>npm i @mxssfd/random-picker -g</code>使用</p>
+
+<a href="#代码测试覆盖率" id="代码测试覆盖率" style="color: inherit; text-decoration: none;">
+  <h2>代码测试覆盖率</h2>
+</a>
+<pre><code class="language-text">--------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------
+File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+--------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------
+ random-picker/src        |     100 |      100 |     100 |     100 |
+  OptionsPool.ts          |     100 |      100 |     100 |     100 |
+  OptionsStore.ts         |     100 |      100 |     100 |     100 |
+  RandomPicker.ts         |     100 |      100 |     100 |     100 |
+--------------------------|---------|----------|---------|---------|----------------------------------------------------------------------------------------
+</code></pre>
+<p>测试覆盖率达到 100%请放心食用</p>
+</div></div></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>
