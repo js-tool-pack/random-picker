@@ -97,19 +97,38 @@ export class OptionsPool<T> {
   }
 
   /**
-   * 获取选项选中的几率
+   * 计算单个选项所占几率
+   */
+  private calcRateOf(index: number): number {
+    const pool = this.pool;
+    const w = 10_000;
+    const currentRange = ~~((pool[index] as PoolItem<T>).range * w);
+    const prevRange = ~~((pool[index - 1]?.range ?? 0) * w);
+    return currentRange - prevRange;
+  }
+
+  /**
+   * 获取选项选中的几率，重复选项会累加起来
+   *
+   * @example
+   *
+   * ```ts
+   * const picker = new RandomPicker([1, 1, 1]);
+   *
+   * console.log(picker.rateOf(1)); // 100;
+   * ```
+   *
    * @param  option 选项
    * @return @return 几率：100分满值
    */
   rateOf(option: T): number {
     const pool = this.pool;
-    const index = pool.findIndex((it) => it.option === option);
-    if (index === -1) return 0;
-    const w = 10_000;
-    const currentRange = ~~((pool[index] as PoolItem<T>).range * w);
-    const prevRange = ~~((pool[index - 1]?.range ?? 0) * w);
-    const diff = currentRange - prevRange;
-    return diff / w;
+    const indexes = pool.reduce((res, it, currentIndex) => {
+      if (it.option === option) res.push(currentIndex);
+      return res;
+    }, [] as number[]);
+    if (!indexes.length) return 0;
+    return indexes.reduce((p, i) => p + this.calcRateOf(i), 0) / 10_000;
   }
 
   /**
