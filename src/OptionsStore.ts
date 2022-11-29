@@ -35,9 +35,9 @@ export class OptionsStore<T> {
    * @return 操作成功或失败
    */
   remove(option: T): boolean {
-    const index = this.list.findIndex((it) => it.option === option);
-    if (index === -1) return false;
-    this.list.splice(index, 1);
+    const filters = this.list.filter((it) => it.option !== option);
+    if (filters.length === -1) return false;
+    this.list = filters;
     return true;
   }
 
