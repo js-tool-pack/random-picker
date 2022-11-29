@@ -370,15 +370,20 @@ describe('random-picker', function () {
     picker.reset();
     expect(picker.poolLen).toBe(6);
     expect(picker.len).toBe(6);
+  });
+  test('remove所有相同选项', () => {
+    const picker = new RandomPicker([1, 2, 3]);
+    expect(picker.poolLen).toBe(3);
+    expect(picker.len).toBe(3);
 
     picker.options([1, 1, 1, 1, 1]);
-    expect(picker.poolLen).toBe(11);
-    expect(picker.len).toBe(11);
+    expect(picker.poolLen).toBe(8);
+    expect(picker.len).toBe(8);
 
     // 移除所有的选项1
     picker.remove(1);
 
-    expect(picker.poolLen).toBe(4);
-    expect(picker.len).toBe(4);
+    expect(picker.poolLen).toBe(2);
+    expect(picker.len).toBe(2);
   });
 });
