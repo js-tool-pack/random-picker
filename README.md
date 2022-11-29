@@ -170,6 +170,10 @@ import { RandomPicker } from '@mxssfd/random-picker';
 const picker = new RandomPicker([1, 2, 3]);
 
 picker.remove(1); // 此时会把选项1移除
+
+picker.options([1, 1, 1, 1, 1]); // 添加5个1
+
+picker.remove(1); // 会把上面添加的5个1都删除掉
 ```
 
 注意：如果移除的选项不存在于 `seed `或者未备份的话，将不能恢复
