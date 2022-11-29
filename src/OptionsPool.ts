@@ -92,7 +92,7 @@ export class OptionsPool<T> {
   /**
    * 选项池剩余的选项
    */
-  get options(): T[] {
+  get allOptions(): T[] {
     return this.pool.map((item) => item.option);
   }
 

@@ -1,5 +1,5 @@
 import type { Tuple } from '@mxssfd/types';
-import type { OptionWeightsTuple, Seed, WeightFn } from './types';
+import type { OptionListItem, OptionWeightsTuple, Seed, WeightFn } from './types';
 import { OptionsPool } from './OptionsPool';
 import { OptionsStore } from './OptionsStore';
 
@@ -85,7 +85,16 @@ export class RandomPicker<T> {
    */
   options(options: Seed<T>): this {
     this.store.add(options);
-    this.refreshPool();
+    this.pool = new OptionsPool([
+      ...this.exportPool().map<OptionListItem<T>>(
+        (item) =>
+          ({
+            option: item[0],
+            weights: item[1],
+          } as OptionListItem<T>),
+      ),
+      ...this.store.list.slice(-options.length),
+    ]);
     return this;
   }
 
@@ -155,7 +164,7 @@ export class RandomPicker<T> {
    */
   remove(option: T): boolean {
     const flag = this.store.remove(option);
-    flag && this.refreshPool();
+    flag && this.pool.remove(option);
     return flag;
   }
 
@@ -196,7 +205,7 @@ export class RandomPicker<T> {
    * 获取选项池剩余的选项
    */
   get poolOptions(): T[] {
-    return this.pool.options;
+    return this.pool.allOptions;
   }
 
   /**
