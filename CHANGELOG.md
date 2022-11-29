@@ -1,3 +1,9 @@
+## [0.0.5](https://github.com/js-tool-pack/random-picker/compare/v0.0.3...v0.0.5) (2022-11-29)
+
+### Bug Fixes
+
+- take 重复选项会 take 所有 ([52561ee](https://github.com/js-tool-pack/random-picker/commit/52561ee6d4a0abb8521a81b6b8f70b5b92431765))
+
 ## [0.0.3](https://github.com/js-tool-pack/random-picker/compare/v0.0.2...v0.0.3) (2022-11-29)
 
 ### Bug Fixes
