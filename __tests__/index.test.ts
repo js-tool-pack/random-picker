@@ -1,6 +1,16 @@
 import { Seed, RandomPicker } from '../src';
 
 describe('random-picker', function () {
+  test('rateOf', () => {
+    const picker = new RandomPicker([1, 1, 1]);
+
+    expect(picker.rateOf(1)).toBe(100);
+
+    picker.options([2, 2]);
+
+    expect(picker.rateOf(1)).toBe(60);
+    expect(picker.rateOf(2)).toBe(40);
+  });
   test('take/rateOf', () => {
     const seed = [1, 2, 3];
     const picker = new RandomPicker(seed);
