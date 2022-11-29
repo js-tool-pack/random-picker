@@ -386,4 +386,27 @@ describe('random-picker', function () {
     expect(picker.poolLen).toBe(2);
     expect(picker.len).toBe(2);
   });
+  test('take重复选项时应该只take选中的那一个，而不是take全部', () => {
+    const picker = new RandomPicker([1, 1, 1]);
+
+    // take一个选项1
+    expect(picker.take()).not.toBe(null);
+    expect(picker.poolLen).toBe(2);
+    expect(picker.len).toBe(3);
+
+    // take一个选项1
+    expect(picker.take()).not.toBe(null);
+    expect(picker.poolLen).toBe(1);
+    expect(picker.len).toBe(3);
+
+    // take一个选项1
+    expect(picker.take()).not.toBe(null);
+    expect(picker.poolLen).toBe(0);
+    expect(picker.len).toBe(3);
+
+    // take一个选项1
+    expect(picker.take()).toBe(null);
+    expect(picker.poolLen).toBe(0);
+    expect(picker.len).toBe(3);
+  });
 });
