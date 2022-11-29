@@ -17,3 +17,4 @@ prettier.config.js
 coverage
 docs-html
 .github
+pnpm-lock.yaml

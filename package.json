@@ -22,7 +22,7 @@
     "release": "esno scripts/release.ts"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,html,md}": [
+    "*.{js,jsx,ts,tsx,json,html,md,yaml}": [
       "prettier --write",
       "eslint",
       "git add"
@@ -88,7 +88,8 @@
   "files": [
     "dist",
     "CHANGELOG.md",
-    "LICENSE"
+    "LICENSE",
+    "bin"
   ],
   "main": "dist/random-picker.cjs.js",
   "module": "dist/random-picker.esm-bundler.js",
@@ -114,5 +115,8 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@mxssfd/types": "5.0.1-beta.1"
   }
 }
