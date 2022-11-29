@@ -4,6 +4,9 @@
 
 该库从[@mxssfd/ts-utils](https://github.com/mengxinssfd/ts-utils/tree/981d9d/packages/random-picker)迁移而来
 
+- [Document](https://js-tool-pack.github.io/random-picker/)
+- [Demo](https://stackblitz.com/edit/react-ts-79qk3t?file=random-picker.tsx)
+
 ## 安装方法
 
 ```shell
@@ -122,7 +125,7 @@ picker.options([
 picker.options([[9], [10, (weights) => weight]]); // 添加权重为1的选项9和动态权限的选项10，此时的选项10和选项33选中几率为33.3333%，其他按权限计算各个选项选中几率
 ```
 
-注意：如果添加选项前有用过 `take` 的话，调用 `option/options` 会自动刷新选项池，已经 `take` 过的选项会重新进入选项池
+~~注意：如果添加选项前有用过 `take` 的话，调用 `option/options` 会自动刷新选项池，已经 `take` 过的选项会重新进入选项池~~**（v0.0.2 已弃用该特性，新特性为可随意添加删除）**
 
 ### `rateOf` 获取选项的选中几率
 
@@ -153,6 +156,10 @@ console.log(picker.rateOf(2)); // 选中几率 8.3333
 console.log(picker.rateOf(3)); // 选中几率 16.6667
 console.log(picker.rateOf(4)); // 选中几率 33.3333
 console.log(picker.rateOf(5)); // 选中几率 33.3334
+
+// 重复选项
+const picker2 = new RandomPicker([1, 1, 1]);
+console.log(picker2.rateOf(1)); // 选中几率 100
 ```
 
 ### `remove` 移除选项
