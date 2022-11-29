@@ -11,3 +11,5 @@
 coverage
 docs-html
 .github
+temp
+pnpm-lock.yaml
