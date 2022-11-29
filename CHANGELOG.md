@@ -1,3 +1,10 @@
+## [0.0.3](https://github.com/js-tool-pack/random-picker/compare/v0.0.2...v0.0.3) (2022-11-29)
+
+### Bug Fixes
+
+- remove 返回 boolean 值不正确 ([6c69690](https://github.com/js-tool-pack/random-picker/commit/6c69690102281e7b9ab5de9ca60fd03729664f9c))
+- remove 重复选项清理不干净 ([d9892d0](https://github.com/js-tool-pack/random-picker/commit/d9892d0c64cfce9f158d34245d6bd9c86737d477))
+
 ## [0.0.2](https://github.com/js-tool-pack/random-picker/compare/v0.0.1...v0.0.2) (2022-11-29)
 
 ### Features
