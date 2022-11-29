@@ -30,9 +30,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/__test__/**'],
+      files: ['**/__tests__/**'],
       rules: {
         '@typescript-eslint/no-empty-function': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
       },
     },
     {
