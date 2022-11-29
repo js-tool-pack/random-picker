@@ -1,8 +1,8 @@
 {
-  "name": "lib-starter",
+  "name": "@tool-pack/random-picker",
   "version": "0.0.0",
   "packageManager": "pnpm@7.1.0",
-  "description": "一个基于pnpm typescript monorepo/multirepo的lib快速启动仓库模板",
+  "description": "🛠 随机挑选工具类库",
   "scripts": {
     "pkg:init": "esno scripts/init-pkg.ts",
     "pkg:new": "esno scripts/new-pkg.ts",
@@ -30,18 +30,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mengxinssfd/lib-starter.git"
+    "url": "git+https://github.com/js-tool-pack/random-picker.git"
   },
   "keywords": [
-    "lib",
-    "starter"
+    "random-picker"
   ],
   "author": "dyh_a",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mengxinssfd/lib-starter/issues"
+    "url": "https://github.com/js-tool-pack/random-picker/issues"
   },
-  "homepage": "https://github.com/mengxinssfd/lib-starter#readme",
+  "homepage": "https://github.com/js-tool-pack/random-picker#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
@@ -90,5 +89,30 @@
     "dist",
     "CHANGELOG.md",
     "LICENSE"
-  ]
+  ],
+  "main": "dist/random-picker.cjs.js",
+  "module": "dist/random-picker.esm-bundler.js",
+  "types": "dist/random-picker.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "node": "./dist/random-picker.cjs.js",
+        "default": "./dist/random-picker.esm-bundler.js"
+      },
+      "require": "./dist/random-picker.cjs.js"
+    }
+  },
+  "buildOptions": {
+    "name": "RandomPicker",
+    "formats": [
+      "esm-bundler",
+      "esm-browser",
+      "cjs",
+      "global"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
